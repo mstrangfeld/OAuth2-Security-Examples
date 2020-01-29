@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Client</title>
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <script src="//code.jquery.com/jquery-2.2.4.min.js"></script>
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Login at Relying Party</h1>
+        <h3>HIdP at Port 3333, AIdP at Port 6363, Relying Party at Port: 4242</h3>
+        <form action="/login" method="POST">
+            <div class="form-group">
+                <label for="idp">Identity Provider</label>
+                <select class="form-control" name="idp" placeholder="Please choose your Identity Provider">
+                    <option>hidp</option>
+                    <option>attacker</option>
+                </select>
+            </div>
+            <button type="submit" class="btn btn-success">Login</button>
+        </form>
+    </div>
+</body>
+
+</html>
